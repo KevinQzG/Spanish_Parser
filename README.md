@@ -4,7 +4,7 @@ The final practice of the Programming Languages course at the EAFIT University c
 1. Check if a phrase is valid or not
 2. If it is valid, it indicates that it is valid in green
 3. If it is invalid, it indicates that it is invalid in red.
-4. A sentence cannot have more than 1 verb since it is a simple sentence
+4. A sentence cannot have more than 1 verb, adjective, adverbs since it is a simple sentence
 5. Supports articles, nouns, verbs, adjectives, adverbs and links
 6. It has an interactive menu
 7. You can choose to parse another sentence or exit the program
