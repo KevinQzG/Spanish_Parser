@@ -89,14 +89,26 @@ def verificacionAdjetivo(palabras): #Verifica que el adjetivo esté solo una vez
         return False
     else:
         return True
-
+    
+def verificacionAdverbio(palabras): #Verifica que el adverbio esté solo una vez
+    c = 0
+    for x in palabras:
+        if x in adverbios:
+            c+=1
+    if c >= 2:
+        return False
+    else:
+        return True
+    
 
 def validar(palabras):  # Valida que las palabras cumplan las reglas (verificaciones)
     if (verificacionAdjetivo(palabras) != True):
         return False
+    if (verificacionAdverbio(palabras) != True):
+        return False
     if(verificacionVerbo(palabras) != True):
       return False
-    elif (verificacionVerbo(palabras) or verificacionAdjetivo(palabras) or verificacion1(palabras) or verificacion2(palabras) or verificacion3(palabras) or verificacion4(palabras) or verificacion5(palabras) or verificacion6(palabras) or verificacion7(palabras) or verificacion8(palabras)):
+    elif (verificacionVerbo(palabras)  or verificacionAdverbio(palabras) or verificacionAdjetivo(palabras) or verificacion1(palabras) or verificacion2(palabras) or verificacion3(palabras) or verificacion4(palabras) or verificacion5(palabras) or verificacion6(palabras) or verificacion7(palabras) or verificacion8(palabras)):
         return True
     else:
         return False
